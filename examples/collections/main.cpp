@@ -8,6 +8,7 @@
 #include <DApplicationSettings>
 #include <DWidgetUtil>
 #include <DLog>
+#include <DWaterMarkHelper>
 
 #include <QDebug>
 
@@ -49,6 +50,24 @@ int main(int argc, char *argv[])
 
     MainWindow w;
     w.show();
+
+    auto ins = DWaterMarkHelper::instance();
+    WaterMarkData data = ins->data();
+    data.setText("dtk example");
+    data.setType(WaterMarkData::WaterMarkType::Text);
+    data.setLayout(WaterMarkData::WaterMarkLayout::Tiled);
+    data.setRotation(30);
+    data.setScaleFactor(0.5);
+    data.setColor(Qt::gray);
+    auto font = data.font();
+    font.setPointSize(65);
+    data.setFont(font);
+    data.setSpacing(65);
+    data.setLineSpacing(-1);
+    data.setOpacity(0.3);
+
+    ins->setData(data);
+    ins->registerWidget(&w);
 
     Dtk::Widget::moveToCenter(&w);
 
