@@ -50,7 +50,7 @@ QMap<QWidget *, DWaterMarkWidget *>DWaterMarkHelperPrivate::widgetMap;
 
 /*!
   \brief DWaterMarkHelper::instance
-  DWaterMarkHelper 的单例对象，使用 Q_GLOBAL_STATIC 定义，在第一次调用时实例化。
+  The singleton object of DWaterMarkHelper is instantiated at the first call using the Q _ GLOBAL _ STATIC definition.
   \return
  */
 DWaterMarkHelper *DWaterMarkHelper::instance()
@@ -61,7 +61,7 @@ DWaterMarkHelper *DWaterMarkHelper::instance()
 /*!
   \class Dtk::Widget::DWaterMaskHelper
   \inmodule dtkwidget
-  \brief 不允许直接实例化此对象
+  \brief Direct instantiation of this object is not allowed
   \a parent
   \sa DWaterMaskHelper::instance
  */
@@ -75,7 +75,6 @@ DWaterMarkHelper::DWaterMarkHelper(QObject *parent)
 
 /*!
   \brief DWaterMarkHelper::registerWidget
-  为指定窗口添加水印
   \a widget
  */
 void DWaterMarkHelper::registerWidget(QWidget *widget)
@@ -97,7 +96,6 @@ void DWaterMarkHelper::registerWidget(QWidget *widget)
 
 /*!
   \brief get the current setting
-  \brief 当前设置的水印信息
  */
 WaterMarkData DWaterMarkHelper::data() const
 {
@@ -106,8 +104,8 @@ WaterMarkData DWaterMarkHelper::data() const
 }
 
 /*!
-  \brief set the current setting \a data
-  \brief 设置当前水印信息
+  \brief set the current setting 
+  \a data
  */
 void DWaterMarkHelper::setData(const WaterMarkData &data)
 {

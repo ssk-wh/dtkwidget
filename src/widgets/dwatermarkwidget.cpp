@@ -47,7 +47,7 @@ private:
 /*!
   \class Dtk::Widget::WaterMarkData
   \inmodule dtkwidget
-  \brief 水印信息结构
+  \brief Watermark information structure
   \a parent
  */
 WaterMarkData::WaterMarkData()
@@ -59,7 +59,7 @@ WaterMarkData::WaterMarkData()
 /*!
   \class Dtk::Widget::WaterMarkData
   \inmodule dtkwidget
-  \brief 拷贝构造
+  \brief coping constructing function
   \a parent
  */
 WaterMarkData::WaterMarkData(const WaterMarkData &p)
@@ -85,7 +85,7 @@ WaterMarkData::WaterMarkData(const WaterMarkData &p)
 /*!
   \class Dtk::Widget::WaterMarkData
   \inmodule dtkwidget
-  \brief 赋值构造
+  \brief Assignment constructor
   \a parent
  */
 WaterMarkData &WaterMarkData::operator=(const WaterMarkData &p)
@@ -114,7 +114,6 @@ WaterMarkData &WaterMarkData::operator=(const WaterMarkData &p)
 
 /*!
   \brief get the current watermark type
-  \brief 当前设置的水印类型
  */
 const WaterMarkData::WaterMarkType &WaterMarkData::type()
 {
@@ -123,8 +122,8 @@ const WaterMarkData::WaterMarkType &WaterMarkData::type()
 }
 
 /*!
-  \brief set the current waternark \a type
-  \brief 设置当前水印的类型
+  \brief set the current waternark 
+  \a type
  */
 void WaterMarkData::setType(WaterMarkType type)
 {
@@ -134,7 +133,6 @@ void WaterMarkData::setType(WaterMarkType type)
 
 /*!
   \brief get the current watermark layout
-  \brief 当前设置的水印布局类型
  */
 const WaterMarkData::WaterMarkLayout &WaterMarkData::layout()
 {
@@ -143,8 +141,8 @@ const WaterMarkData::WaterMarkLayout &WaterMarkData::layout()
 }
 
 /*!
-  \brief set the current waternark \a layout
-  \brief 设置当前水印的布局类型
+  \brief set the current waternark 
+  \a layout
  */
 void WaterMarkData::setLayout(WaterMarkLayout layout)
 {
@@ -154,7 +152,6 @@ void WaterMarkData::setLayout(WaterMarkLayout layout)
 
 /*!
   \brief get the current watermark scale factor
-  \brief 当前设置的水印整体缩放系数
  */
 qreal WaterMarkData::scaleFactor()
 {
@@ -163,8 +160,8 @@ qreal WaterMarkData::scaleFactor()
 }
 
 /*!
-  \brief set the current waternark \a scaleFactor
-  \brief 设置当前水印的整体缩放系数
+  \brief set the current waternark 
+  \a scaleFactor
  */
 void WaterMarkData::setScaleFactor(qreal scaleFactor)
 {
@@ -174,7 +171,6 @@ void WaterMarkData::setScaleFactor(qreal scaleFactor)
 
 /*!
   \brief get the current watermark spacing
-  \brief 当前设置的水印间距
  */
 int WaterMarkData::spacing()
 {
@@ -184,7 +180,6 @@ int WaterMarkData::spacing()
 
 /*!
   \brief set the current waternark \a spacing
-  \brief 设置当前水印的间距
  */
 void WaterMarkData::setSpacing(int spacing)
 {
@@ -194,7 +189,6 @@ void WaterMarkData::setSpacing(int spacing)
 
 /*!
   \brief get the current watermark line spacing
-  \brief 当前设置的水印行间距
  */
 int WaterMarkData::lineSpacing()
 {
@@ -203,8 +197,8 @@ int WaterMarkData::lineSpacing()
 }
 
 /*!
-  \brief set the current waternark \a lineSpacing
-  \brief 设置当前水印的行间距
+  \brief set the current waternark 
+  \a lineSpacing
  */
 void WaterMarkData::setLineSpacing(int lineSpacing)
 {
@@ -214,7 +208,6 @@ void WaterMarkData::setLineSpacing(int lineSpacing)
 
 /*!
   \brief get the current watermark text
-  \brief 当前设置的水印文本内容
  */
 const QString &WaterMarkData::text()
 {
@@ -223,8 +216,8 @@ const QString &WaterMarkData::text()
 }
 
 /*!
-  \brief set the current waternark \a text
-  \brief 设置当前水印的文本内容
+  \brief set the current waternark 
+  \a text
  */
 void WaterMarkData::setText(const QString &text)
 {
@@ -234,7 +227,6 @@ void WaterMarkData::setText(const QString &text)
 
 /*!
   \brief get the current watermark font
-  \brief 当前设置的水印字体
  */
 const QFont &WaterMarkData::font()
 {
@@ -243,8 +235,8 @@ const QFont &WaterMarkData::font()
 }
 
 /*!
-  \brief set the current waternark \a font
-  \brief 设置当前水印的字体
+  \brief set the current waternark 
+  \a font
  */
 void WaterMarkData::setFont(const QFont &font)
 {
@@ -254,7 +246,6 @@ void WaterMarkData::setFont(const QFont &font)
 
 /*!
   \brief get the current watermark color
-  \brief 当前设置的水印颜色
  */
 const QColor &WaterMarkData::color()
 {
@@ -263,8 +254,8 @@ const QColor &WaterMarkData::color()
 }
 
 /*!
-  \brief set the current waternark \a color
-  \brief 设置当前水印的颜色
+  \brief set the current waternark 
+  \a color
  */
 void WaterMarkData::setColor(const QColor &color)
 {
@@ -273,8 +264,7 @@ void WaterMarkData::setColor(const QColor &color)
 }
 
 /*!
-  \brief get the current watermark rotation
-  \brief 当前设置的水印旋转角度(0~360)
+  \brief get the current watermark rotation(0~360)
  */
 qreal WaterMarkData::rotation()
 {
@@ -283,8 +273,8 @@ qreal WaterMarkData::rotation()
 }
 
 /*!
-  \brief set the current waternark \a rotation
-  \brief 设置当前水印的旋转角度(0~360)
+  \brief set the current waternark (0~360)
+  \a rotation
  */
 void WaterMarkData::setRotation(qreal rotation)
 {
@@ -293,8 +283,7 @@ void WaterMarkData::setRotation(qreal rotation)
 }
 
 /*!
-  \brief get the current watermark opacity
-  \brief 当前设置的水印透明度(0~1.0)
+  \brief get the current watermark opacity(0~1.0)
  */
 qreal WaterMarkData::opacity()
 {
@@ -303,8 +292,8 @@ qreal WaterMarkData::opacity()
 }
 
 /*!
-  \brief set the current waternark \a opacity
-  \brief 设置当前水印透明度(0~1.0)
+  \brief set the current waternark (0~1.0)
+  \a opacity
  */
 void WaterMarkData::setOpacity(qreal opacity)
 {
@@ -314,7 +303,6 @@ void WaterMarkData::setOpacity(qreal opacity)
 
 /*!
   \brief get the current watermark image
-  \brief 当前设置的水印图片
  */
 const QImage &WaterMarkData::image()
 {
@@ -324,7 +312,6 @@ const QImage &WaterMarkData::image()
 
 /*!
   \brief set the current waternark \a image
-  \brief 设置当前水印图片
  */
 void WaterMarkData::setImage(const QImage &image)
 {
@@ -334,7 +321,6 @@ void WaterMarkData::setImage(const QImage &image)
 
 /*!
   \brief get the current watermark grayscale of image
-  \brief 当前设置的水印图片是否需要灰度化
  */
 bool WaterMarkData::grayScale()
 {
@@ -344,7 +330,6 @@ bool WaterMarkData::grayScale()
 
 /*!
   \brief set the current waternark \a grayScale of image,default value is true
-  \brief 设置当前水印图片是否需要灰度化，默认为true
  */
 void WaterMarkData::setGrayScale(bool grayScale)
 {
@@ -465,7 +450,7 @@ void DWaterMarkWidgetPrivate::init()
 /*!
   \class Dtk::Widget::DWaterMarkWidget
   \inmodule dtkwidget
-  \brief 水印类，将覆盖设置的父界面，并跟随父界面动态调整大小
+  \brief The watermark class will cover the set parent interface and dynamically adjust the size following the parent interface.
   \a parent
  */
 DWaterMarkWidget::DWaterMarkWidget(QWidget *parent)
@@ -481,7 +466,6 @@ DWaterMarkWidget::DWaterMarkWidget(QWidget *parent)
 
 /*!
   \brief get the current setting
-  \brief 当前设置的水印信息
  */
 const WaterMarkData &DWaterMarkWidget::data()
 {
@@ -491,7 +475,6 @@ const WaterMarkData &DWaterMarkWidget::data()
 
 /*!
   \brief set the current setting \a data
-  \brief 设置当前水印信息
  */
 void DWaterMarkWidget::setData(const WaterMarkData &data)
 {
